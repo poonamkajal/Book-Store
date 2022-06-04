@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Tiro+Devanagari+Hindi&display=swap');
+
+:root {
+    --base-color: #8e0931;
+    --secondary-color: #e13d7c;
+    --action-color: #cb5974;
+    --layover-color: #b310596c;  }
+  body {
+    margin: 0;
+    height: 150vh;
+    background-color: rgb(126, 34, 71);
+  }
+  .Main-container {
+    display: grid;
+    height: 145vh;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 0.5fr 4fr 1fr 0.3fr;
+    gap: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    grid-template-areas:
+    "header header header header"
+    "carousel carousel carousel carousel "
+    "about info contact timimg"
+    "footer footer footer footer";
+  }
+  header {
+    grid-area: header;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    background-color: var(--action-color);
+    background-image: url(../images/b1.jpg);
+    background-blend-mode: screen;
+    border-radius: 0.5rem;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    font-weight:bolder;
+    color: rgb(91, 7, 46);
+  }
+  
+  li {
+    text-decoration: none;
+    font-size: 30px;
+  }
+  li:hover{
+    color: #fff;
+    background: #cb5974;
+    box-shadow: 5px 5px 0 0px #fff;
+  }
+  
+  .navbar_brand {
+    grid-area: header;
+    background-color: var(--base-color);
+    color: beige;
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 0.5rem;
+  }
+
+  #about-section{
+    grid-area: carousel;
+    background-color: whitesmoke;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    border-radius: 0.5rem;
+  }
+  
+.detail-box a{
+  display: inline-block;
+  padding: 10px 45px;
+  background-color:  #cb5974;
+  color: #ffffff;
+  border-radius: 45px;
+  border: 1px solid  #cb5974;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 15px;
+}
+#about{
+  grid-area: about;
+  padding-left: 40px;
+  background-color: var(--action-color);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+}
+#info{
+  grid-area: info;
+  padding-left: 40px;
+  background-color: var(--action-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  gap: 1rem;
+
+}
+#contact{
+  grid-area: contact;
+  padding-left: 10px;
+  background-color: var(--action-color);
+  border-radius: 0.5rem;
+  align-items:center;
+  color: #fff;
+  gap: 1rem;
+}
+#timimg{
+grid-area: timimg;
+padding-left: 40px;
+background-color: var(--action-color);
+border-radius: 0.5rem;
+color: #fff;
+gap: 1rem;
+}
+#contact h4{
+ margin-left: 30px ;
+}
+#contact form input{
+border: none;
+margin-left: 30px;
+margin-top: 5px;
+padding: 10px 15px;
+padding-right: 30px;
+background-color: white;
+width: 250px;
+height: 15px; 
+color: #000000;
+outline: none;
+border-radius: 45px;
+}
+
+#contact form button {
+text-align: center;
+display: inline-block;
+margin-left: 100px;
+padding: 10px 40px;
+background-color: #f16e8c;
+color: #ffffff;
+border-radius: 45px;
+border: 1px solid #f66f8e;
+transition: all 0.3s;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+  footer {
+    grid-area: footer;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #darkmode{
+    background-color: #c92a5a;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .headerdarkmode{
+    background-color: var(--layover-color);
+    color: #fff;
+    background-image: url(../images/b1.jpg);
+    background-blend-mode: screen;
+    border-radius: 0.5rem;
+  }
+ 
+  .entryDarkmode{
+    height: 150vh;
+   background-color: var(--layover-color);
+}
+.navbardarkmode{
+  background-color: var(--layover-color);
+
+}
+.formDarkmode{
+  background-color: var(--layover-color);
+}
+.buttonDarkmode{
+  background-color: var(--layover-color);
+}
+
+
+  @media only screen and (max-width: 580px) {
+    .Main-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 2.2fr 2.2fr 0.4fr;
+      grid-template-areas:
+        "header"
+        "carousel"
+        "about"
+        "info"
+        "contact"
+        "footer";
+    }
+  }
+  
