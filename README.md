@@ -13,6 +13,7 @@ Dropped Down Menu
 Use web fonts
 Use different types of content in the form of text, images, videos, and GIFs
 Use regex validation
+
 CSS
 
 Inline, internal, and external styling
@@ -22,6 +23,7 @@ Use colors that complement each other
 Use Flexbox (Optional)
 Use SASS/SCSS (Optional)
 Use animations (Optional)
+
 Javascript
 
 External scripts
